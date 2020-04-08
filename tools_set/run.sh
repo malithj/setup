@@ -13,12 +13,12 @@ MERCURIAL_VERSION=5.3
 # navigate to directory
 cd ${ROOT_DIR}
 
-# download llvm-project and checkout tag
+# download mercurial
 wget https://www.mercurial-scm.org/release/mercurial-${MERCURIAL_VERSION}.tar.gz
 tar -zxvf mercurial-${MERCURIAL_VERSION}.tar.gz
 cd mercurial-${MERCURIAL_VERSION}
 
-# build llvm and clang
+# build mercurial local to the folder
 make local
 
 # configure paths
